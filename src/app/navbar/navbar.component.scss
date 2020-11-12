@@ -1,0 +1,76 @@
+.navbar {
+    background-color: transparent;
+    transition: background-color 500ms linear;
+  }
+  .navbar.scrolled {
+    background-color: black !important;
+    opacity: 0.9;
+    transition: background-color 500ms linear;
+  }
+  .nav-right {
+    margin: 0 0 0 auto;
+  }
+  .nav-link {
+    color: #eee;
+  }
+  .nav-item a {
+    color: #eee;
+  }
+  .dropdown-menu {
+    background-color: black;
+  }
+  .dropdown-menu a {
+    color: #eee;
+  }
+  .collapsing {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.35s ease;
+  }
+  .mobile-service {
+    display: none;
+  }
+  .mobile-serve {
+    display: none;
+  }
+  
+  #logoImg{
+      width: 100px;
+      display: none;
+  }
+  .navbar-brand{
+      margin-left: 1rem;
+  }
+
+  /*Nav mobile animations*/
+  @media (max-width: 767px) {
+    .navbar {
+      background-color: black;
+      max-height: 10%;
+      padding-right: 0%;
+    }
+    .nav {
+      height: auto;
+      width: 50%;
+      padding-left: 1rem;
+    
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.5s ease-in;
+      font-size: large;
+    }
+    .navbar-toggler {
+      margin-right: 1rem;
+    }
+    .nav-item {
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+  @media(min-width: 768px){
+    #logoImg{
+        display: block;
+    }
+  }
