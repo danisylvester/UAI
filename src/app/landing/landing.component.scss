@@ -1,61 +1,95 @@
-  
-.landing {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background-color:#eee;
-    text-align: center;
-  }
-  .home-wrap {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/../assets/images/jumeirah-lake-towers.jpg");
-    height: 100%;
-    width: 100%;
+.landing-bkg {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0)),
+    url("/../assets/images/black-370118_1280.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right-side {
+  display: none;
+}
+.leftSide {
+  text-align: center;
+}
+#logoImg {
+  width: 225px;
+  margin: 9rem 1rem 1rem 1rem;
+}
+.leftSide i {
+  margin: 1rem 0rem;
+  font-size: 75px;
+  color: #dcbb67;
+  width: 100%;
+}
+
+/*Tablet View*/
+@media (min-width: 768px) {
+.leftSide{
+  height: 100vh;
+  float: left;
+  width: 40%;
+}
+#logoImg {
+  width: 250px;
+  margin: 16rem 1rem 1rem 1rem;
+}
+.right-side {
+  display: block;
+  height: 100vh;
+  float: right;
+  width: 60%;
+  background-image: url("/../assets/images/threebuildings-landing-vertical.jpg");
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+}
+// @media(min-width:1024px){
+//   #right-img{
+//     display:block;
+//     width: 100%;
+//     height: 100vh;
+//   }
+//   #right-img-vertical{
+//     display: none;
+//   }
+// }
+
+// /*test*/
+@media (min-width: 1024px) {
+  .right-side {
+    height: 100vh;
+    float: right;
+    width: 60%;
+    background-image: url("/../assets/images/threebuildings-landing-vertical.jpg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
-  .home-inner {
-    background-color: black;
-    opacity: 0.9;
-    color: white;
-    width: 100%;
-    transform: translate(0, 35vh);
-    padding: 5%;
+  .leftSide {
+    height: 100%;
+    width: 40%;
+    float: left;
     text-align: center;
   }
-  .home-inner h1{
-    font-family: 'Secular One', sans-serif;
-    margin: 1rem;
-    
+  .leftSide img {
+    width: 700px;
+    margin-top: 30%;
   }
-  .home-inner h3{
-    color: #DCBB67;
-    margin: 1rem;
-  }
-  .home-inner a {
-    max-width: 200px;
-    margin: 1rem;
-    background-color: black;
-    color: #DCBB67;
-    border: 2px solid #DCBB67;
-  }
-  .home-inner a:hover{
-      background-color: #DCBB67;
-      color: white;
-  }
-  
-  /*Laptop View*/
-  @media (min-width: 1024px){
-    .home-inner{
-      width: 75%;
-      display: inline-block;
-      transform: translate(0, 30vh);
-    }
 }
-@media(min-width:1500px){
-    .home-inner{
-        width: 60%;
-
-    }
+@media(min-width:1600px){
+  .right-side{
+    background-image: url("/../assets/images/threebuildings-landing.jpg");
+    width: 70%;
+  }
+  .leftSide{
+    width: 30%;
+  }
 }
