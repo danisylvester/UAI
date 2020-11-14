@@ -1,0 +1,76 @@
+.home-services {
+    padding: 4rem 1rem;
+  }
+  .serve-margin {
+    margin-bottom: 0.5rem;
+    color: #736535;
+  }
+  .card {
+    margin: 1rem;
+  }
+  .card-col {
+    margin-top: 1.5rem;
+    transition: margin 0.35s ease;
+  }
+  .card-title{
+    font-style: italic;  
+    color: #736535;
+    text-align: center;  
+    margin: 1rem;
+  }
+  .center-card-txt{
+    display: flex;
+    justify-content: center;
+  }
+  .card-text{
+    margin-bottom: 1rem;
+  }
+  .card-text li{
+    list-style: none;
+  }
+  @media (min-width: 425px) {
+    .card-img-top {
+      width: 50%;
+    }
+  }
+  /*Medium-ish Services Home*/
+  @media (min-width: 600px) {
+    .home-services {
+      padding: 10% 4rem;
+    }
+    .card {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  /*Tablet Services Home*/
+  @media (min-width: 768px) {
+    .card{
+      margin: 2rem 5rem;
+    }
+    .card-text{
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+    }
+  }
+  /*Large Services Home*/
+  @media (min-width: 1024px) {
+    .home-services {
+      padding: 5rem;
+    }
+    .card {
+      height: 100%;
+      margin: 1rem;
+    }
+    .card-title{
+      margin: 1rem 0rem;
+    }
+
+  }
+  
+  /*Larger Projects*/
+  @media (min-width: 1200px) {
+    .home-services {
+      padding: 5rem 15%;
+    }
+  }

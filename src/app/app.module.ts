@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
+import { HomeServicesComponent } from './home-services/home-services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeServicesComponent
   ],
   imports: [
     BrowserModule,
