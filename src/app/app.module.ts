@@ -8,13 +8,15 @@ import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import { HomeServicesComponent } from './home-services/home-services.component';
+import { LocationsComponent } from './locations/locations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     NavbarComponent,
-    HomeServicesComponent
+    HomeServicesComponent,
+    LocationsComponent
   ],
   imports: [
     BrowserModule,
