@@ -6,7 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 4rem 0rem 4rem 0rem;
+  padding: 4rem 1rem;
 }
 #leftCol h2 {
   color: white;
@@ -37,18 +37,22 @@
     margin: 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 30%;
+    width: 35%;
     float: left;
   }
   #leftCol h2 {
     text-align: left;
     margin-bottom: 2rem;
   }
+  .location{
+    display: flex;
+    justify-content: center;
+  }
   #locationList {
     display: flex;
   }
   #locationList li {
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 0rem 1rem 0rem;
   }
   #locationList li a {
     color: white;
@@ -56,13 +60,35 @@
   }
   .nav-stacked {
     flex-direction: column;
-    display: none;
   }
   #mainCol {
-    margin-top: 2.5rem;
+    padding-top: 2rem;
+    width: 65%;
+    display: inline-block;
   }
   .location{
       text-align: right;
   }
- 
+}
+/*Small Laptop View*/
+@media (min-width: 1024px) {
+    .bkg{
+        padding: 4rem 3rem;
+    }
+}
+/*Large Laptop View*/
+@media(min-width:1440px){
+    #leftCol{
+        width: 30%;
+        padding-left: 5rem;
+    }
+    #locationList{
+        font-size: x-large;
+    }
+    #mainCol{
+        width: 70%;
+    }
+    .locImg{
+      width: 900px;
+    }
 }

@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import { HomeServicesComponent } from './home-services/home-services.component';
 import { LocationsComponent } from './locations/locations.component';
+import { HomeContactComponent } from './home-contact/home-contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LocationsComponent } from './locations/locations.component';
     LandingComponent,
     NavbarComponent,
     HomeServicesComponent,
-    LocationsComponent
+    LocationsComponent,
+    HomeContactComponent
   ],
   imports: [
     BrowserModule,
