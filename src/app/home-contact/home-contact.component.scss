@@ -6,12 +6,56 @@
     background-color: gray;
     width: 100%;
 }
-#rightSide{
-    margin: 2rem 1rem;
-}
 .gold{
     color: #736535;
 }
+#rightSide{
+    padding-top: 2rem;
+    text-align: center;
+}
 #rightSide h5{
     display: inline;
+}
+.learnMore{
+    margin-top: 2rem;
+    border: 2px solid #736535;
+    color: #736535;
+    display: inline-block;
+}
+.learnMore:hover{
+    background-color: #736535;
+    color: white;
+}
+.btn-wrapper{
+    text-align: center;
+}
+@media(min-width: 768px){
+    .bkg{
+        padding: 4rem 3rem;
+    }
+    #rightSide{
+        text-align:left;
+        padding-top: 1rem;
+    }
+    #map{
+        height: 370px;
+    }
+}
+@media(min-width:1024px){
+    .bkg{
+        padding: 4rem 3rem;
+    }
+    #map{
+        height: 350px;
+    }
+}
+@media(min-width: 1440px){
+    #map{
+        height: 400px;
+        width: 657px;  
+    }
+    #map-wrapper{
+        display: flex;
+        justify-content: center;
+    }
 }

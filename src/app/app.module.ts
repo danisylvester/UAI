@@ -11,6 +11,7 @@ import { HomeServicesComponent } from './home-services/home-services.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
     HomeServicesComponent,
     LocationsComponent,
     HomeContactComponent,
-    ScrollSpyDirective
+    ScrollSpyDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
