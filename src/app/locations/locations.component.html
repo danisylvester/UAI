@@ -1,9 +1,9 @@
 <div class="container-fluid bkg">
   <div id="leftCol">
-    <h2>LOCATIONS</h2>
+    <h2 id="menuTitle">LOCATIONS</h2>
     <ul class="nav nav-stacked" id="locationList">
-      <li><a href="#loc1">CHARKOP</a></li>
-      <li><a href="#loc2">WAGHOLI</a></li>
+      <li id="firstMenuItem"><a href="#loc1">CHARKOP</a></li>
+      <li><a href="#loc2" [style.color]="loc2Selected ? '#dcbb67' : 'white'">WAGHOLI</a></li>
       <li><a href="#loc3">AKLUJ</a></li>
       <li><a href="#loc4">BELWANDI</a></li>
       <li><a href="#loc5">KASHTI</a></li>

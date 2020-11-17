@@ -10,6 +10,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { HomeServicesComponent } from './home-services/home-services.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
+import { ScrollSpyDirective } from './scroll-spy.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeContactComponent } from './home-contact/home-contact.component';
     NavbarComponent,
     HomeServicesComponent,
     LocationsComponent,
-    HomeContactComponent
+    HomeContactComponent,
+    ScrollSpyDirective
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { HomeContactComponent } from './home-contact/home-contact.component';
     BrowserAnimationsModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
