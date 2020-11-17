@@ -52,7 +52,7 @@
     padding: 0.5rem 0rem 1rem 0rem;
   }
   #locationList li a {
-    color: white;
+    color: #eee;
     font-weight: bold;
   }
   #locationList li a:hover
@@ -90,5 +90,16 @@
   }
   .locImg {
     width: 900px;
+  }
+}
+@media(min-width:1850px){
+  #leftCol {
+    padding-left: 9rem;
+  }
+  #locationList{
+    padding-top: 1.5rem;
+  }
+  #locationList li{
+    margin-bottom: 1.5rem;
   }
 }

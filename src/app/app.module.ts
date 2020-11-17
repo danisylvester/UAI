@@ -12,6 +12,8 @@ import { LocationsComponent } from './locations/locations.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { FooterComponent } from './footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FooterComponent } from './footer/footer.component';
     LocationsComponent,
     HomeContactComponent,
     ScrollSpyDirective,
-    FooterComponent
+    FooterComponent,
+    AboutUsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
