@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { InViewportModule } from '@thisissoon/angular-inviewport';
     ScrollSpyDirective,
     FooterComponent,
     AboutUsComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
