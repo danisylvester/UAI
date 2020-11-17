@@ -14,6 +14,8 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
 import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    InViewportModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]
