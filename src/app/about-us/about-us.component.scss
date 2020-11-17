@@ -1,6 +1,7 @@
 .bkg {
   width: 100%;
   padding: 0;
+  background-color: #eee;
 }
 .topTitle {
   background-color: #736535;
@@ -27,33 +28,68 @@
 }
 .header {
   text-align: center;
-  color: #736535;
+  color: black;
 }
 .aFounderTitle {
   font-style: italic;
   text-align: center;
-}
-.founders{
-    margin:2rem 0rem;
-
-}
-.founder1, .founder2 {
-    margin-top: 2rem;
+  color: #736535;
 }
 hr{
     color: #736535;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1000px;
 }
 .aboutSummary{
     padding-bottom: 0.5rem;    
 }
-.about-text-wrapper{
+.text-wrapper{
     margin-top: 1.5rem;
+}
+.founders-wrapper{
+    margin-top: 3rem;
 }
 @media(min-width:425px){
     .body{
         padding:3rem 2rem;
+    }
+}
+@media(min-width:768px){
+    .body{
+        text-align: left;
+        padding: 3rem 4rem;
+    }
+    .founderTitleWrapper{
+       margin-top: auto;
+       margin-bottom: auto;
+    }
+    .aFounderTitle{
+        text-align: left;
+    }
+    .profileImg {
+        margin: 2rem 0rem;
+      }
+}
+
+@media(min-width: 1024px){
+    .aboutSummary{
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .body{
+        padding: 5rem 7rem;
+    }
+    .founders-wrapper{
+        margin-top:4rem;
+    }
+    .aFounderTitle{
+        padding-left:4rem;
+    }
+}
+@media(min-width:1100px){
+    .aFounderTitle{
+        padding-left:0rem;
     }
 }
