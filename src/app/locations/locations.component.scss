@@ -32,7 +32,7 @@
   display: none;
 }
 #menuTitle{
-  font-size: 44px;
+  font-size: 40px;
   font-family: "Goldman", cursive;
     color: #dcbb67;
 }
@@ -64,9 +64,7 @@
   }
   #locationList li a {
     color: #eee;
-    font-size: 36px;
-    line-height: 28px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.0045em;
     font-family: 'Inter', sans-serif;
@@ -90,11 +88,17 @@
     color: #dcbb67 !important;
     transition:0.5s;
   }
+  #menuTitle{
+    font-size: 30px;
+  }
 }
 /*Small Laptop View*/
 @media (min-width: 1024px) {
   .bkg {
-    padding: 4rem 3rem;
+    padding: 4rem 1.5rem;
+  }
+  #menuTitle{
+    font-size: 35px;
   }
 }
 /*Large Laptop View*/
@@ -111,6 +115,9 @@
   }
   .locImg {
     width: 900px;
+  }
+  #menuTitle{
+    font-size: 40px;
   }
 }
 @media(min-width:1850px){
