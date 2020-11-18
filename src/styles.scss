@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+  font-family: "SariBold";
+  src: local("SariBold"), url(./assets/fonts/SariBold/SariBold.ttf) format("truetype");
+}
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
@@ -40,9 +45,10 @@ $gold-theme: mat-light-theme((
 
 html, body { 
   scroll-behavior: smooth;
+
 }
 body { 
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  font-family: 'Markazi Text', serif;
 }
 * {
   margin: 0;

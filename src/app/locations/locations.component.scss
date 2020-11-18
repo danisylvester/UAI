@@ -15,8 +15,13 @@
 .locHeader {
   text-align: center;
   color: #dcbb67;
-  font-style: italic;
   margin: 1rem;
+  font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0.0045em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+    font-style: italic;
 }
 .locImg {
   width: 100%;
@@ -26,10 +31,15 @@
 #locationList {
   display: none;
 }
+#menuTitle{
+  font-size: 44px;
+  font-family: "Goldman", cursive;
+    color: #dcbb67;
+}
 /*Tablet View*/
 @media (min-width: 768px) {
   .bkg {
-    padding: 4rem 2rem;
+    padding: 4rem 1.5rem;
   }
   #leftCol {
     position: sticky;
@@ -50,10 +60,17 @@
   }
   #locationList li {
     padding: 0.5rem 0rem 1rem 0rem;
+
   }
   #locationList li a {
     color: #eee;
-    font-weight: bold;
+    font-size: 36px;
+    line-height: 28px;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.0045em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
   }
   #locationList li a:hover
   {
@@ -98,7 +115,7 @@
 }
 @media(min-width:1850px){
   #leftCol {
-    padding-left: 9rem;
+    padding-left: 8rem;
   }
   #locationList{
     padding-top: 1.5rem;

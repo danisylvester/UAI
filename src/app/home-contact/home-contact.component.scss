@@ -13,11 +13,30 @@
     padding-top: 2rem;
     text-align: center;
 }
+#rightSide h2{
+    color: #736535;
+    font-size: 44px;
+  font-family: "Goldman", cursive;
+}
+#rightSide h5{
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
 #rightSide p{
     display: inline;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.0045em;
+    color: #3f3f3f;
+    font-family: 'Inter', sans-serif;
 }
 #rightSide a{
-    color: black;
+    color: #3f3f3f;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.0045em;
+
+    font-family: 'Inter', sans-serif;
 }
 .learnMore{
     margin-top: 2rem;

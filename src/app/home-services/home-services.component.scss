@@ -1,9 +1,12 @@
 .home-services {
     padding: 4rem 1rem;
+    letter-spacing: 2px;
   }
   .serve-margin {
     margin-bottom: 0.5rem;
     color: #736535;
+    font-size: 44px;
+  font-family: "Goldman", cursive;
   }
   .card {
     margin: 1rem;
@@ -16,7 +19,12 @@
     font-style: italic;  
     color: #736535;
     text-align: center;  
-    margin: 1rem;
+    margin: 1.5rem;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
   }
   .center-card-txt{
     display: flex;
@@ -24,10 +32,17 @@
   }
   .card-text{
     margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.0045em;
+    color: #3f3f3f;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
   }
   .card-text li{
     list-style: none;
   }
+
   @media (min-width: 425px) {
     .card-img-top {
       width: 50%;
@@ -54,7 +69,7 @@
     }
   }
   /*Large Services Home*/
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     .home-services {
       padding: 5rem;
     }
