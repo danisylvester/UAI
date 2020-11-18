@@ -69,6 +69,10 @@
     display: flex;
     justify-content: center;
   }
+  .highlight{
+    color: #dcbb67 !important;
+    transition:0.5s;
+  }
 }
 /*Small Laptop View*/
 @media (min-width: 1024px) {
@@ -105,6 +109,3 @@
 }
 
 
-.highlight{
-  color:yellow;
-}
