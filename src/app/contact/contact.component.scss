@@ -1,4 +1,72 @@
-.bkg{
-    height: 100vh;
+.bkg {
+  width: 100%;
+  padding: 0;
+}
+.heading {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0)),
+    url("/../assets/images/black-370118_1280.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #dcbb67;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Goldman", cursive;
+}
+.main{
+    padding: 4rem 1rem;
+}
+#map{
+    height: 300px;
+    background-color: gray;
     width: 100%;
+}
+.gold{
+    color: #736535;
+    font-weight: bold;
+}
+#rightSide{
+    padding-top: 2rem;
+    text-align: center;
+}
+#rightSide p{
+    display: inline;
+}
+
+@media(min-width: 768px){
+    #rightSide{
+        text-align:left;
+        margin-top:auto;
+        margin-bottom: auto;
+        padding-top:0;
+    }
+    #map{
+        height: 370px;
+    }
+    .main{
+        padding:6rem 1rem;
+    }
+}
+@media(min-width:1024px){
+    #map{
+        height: 350px;
+    }
+    #rightSide{
+        padding-left: 3rem;
+    }
+}
+@media(min-width: 1440px){
+    #map{
+        height: 400px;
+        width: 657px;  
+    }
+    #map-wrapper{
+        display: flex;
+        justify-content: center;
+    }
 }
