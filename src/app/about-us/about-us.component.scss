@@ -132,11 +132,12 @@ hr {
     margin-top: 2rem;
   }
   .body {
-    padding: 5rem 7rem;
+    padding: 5rem 6rem;
   }
   .founders-wrapper {
     margin-top: 4rem;
   }
+  
   .profileImg {
     width: 250px;
   }
@@ -156,18 +157,30 @@ hr {
     display: block;
     margin: 3rem auto;
 }
+.founder1, .founder2{
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+.founder1{
+  border-left: 3px solid #736535;
+}
+.founder2{
+  border-left: 3px solid #736535;
+  margin-top: 4rem;
+}
+
 }
 @media(min-width:1440px){
     .body {
-        padding: 5rem 9rem;
+        padding: 5rem 4rem;
       }
-      .profileImgWrapper{
-        margin-left: 2rem;
+    .founders-wrapper{
+      margin: 4rem 6rem;
     }
 }
 @media (min-width: 1880px) {
     .founders-wrapper{
-        margin: 4rem 13%;
+        margin: 4rem 12% 4rem 10%;
     }
     .icon {
         width: 90px;
