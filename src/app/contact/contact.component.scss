@@ -17,8 +17,10 @@
   justify-content: center;
   align-items: center;
   font-family: "Goldman", cursive;
-  font-size: 55px;
-  font-weight: 900;
+}
+.heading h1{
+    font-size: 55px;
+
 }
 .main{
     padding: 4rem 1rem;
@@ -29,7 +31,7 @@
     font-family: 'Inter', sans-serif;
 }
 .main h5{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 #map{
@@ -69,6 +71,9 @@
     }
     #rightSide{
         padding-left: 3rem;
+    }
+    .main{
+        padding:7rem 2rem;
     }
 }
 @media(min-width: 1440px){

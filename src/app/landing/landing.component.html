@@ -2,7 +2,12 @@
         <div class="leftSide">
             <div>
                 <img id="logoImg" src="/assets/images/logo-black-removebg-preview.png">
-                <i class="material-icons">expand_more</i>
+                <a
+                id="scrollBtn" 
+                [routerLink]="'/home'"
+                [state]="{ subRoute: 'home-services' }"
+                type="button btn"
+                ><i class="material-icons">expand_more</i></a>
             </div>
         </div>
         <div class="right-side"></div>

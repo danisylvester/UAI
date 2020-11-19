@@ -16,6 +16,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { ContactComponent } from './contact/contact.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    InViewportModule
+    InViewportModule,
+    RouterModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]
