@@ -1,91 +1,107 @@
 .home-services {
-    padding: 4rem 1rem;
-    letter-spacing: 2px;
-  }
-  .serve-margin {
-    margin-bottom: 0.5rem;
-    color: #736535;
-    font-size: 40px;
+  padding: 4rem 1rem;
+  letter-spacing: 2px;
+}
+.serve-margin {
+  margin-bottom: 0.5rem;
+  color: #736535;
+  font-size: 40px;
   font-family: "Goldman", cursive;
+}
+.card {
+  margin: 1rem;
+}
+.card-col {
+  margin-top: 1.5rem;
+  transition: margin 0.35s ease;
+}
+$font-size: 2rem;
+.card-title {
+  font-family: "Goldman", cursive;
+  color: #736535;
+  text-align: center;
+  margin: 1.5rem;
+  font-size: $font-size;
+  line-height: $font-size * 1.4;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.center-card-txt {
+  text-align: center;
+}
+hr {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  font-size: $font-size * 0.8;
+  line-height: $font-size;
+  letter-spacing: 0.0045em;
+  color: #3f3f3f;
+  font-weight: 550;
+  font-family: "Goldman", cursive;
+}
+.card-text li {
+  list-style: none;
+}
+
+@media (min-width: 425px) {
+  .card-img-top {
+    width: 50%;
+  }
+}
+/*Medium-ish Services Home*/
+@media (min-width: 600px) {
+  .home-services {
+    padding: 10% 4rem;
   }
   .card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+/*Tablet Services Home*/
+@media (min-width: 768px) {
+  .card {
+    margin: 2rem 5rem;
+  }
+  .card-text {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+}
+/*Large Services Home*/
+@media (min-width: 992px) {
+  .home-services {
+    padding: 5rem;
+  }
+  .card {
+    height: 100%;
     margin: 1rem;
   }
-  .card-col {
-    margin-top: 1.5rem;
-    transition: margin 0.35s ease;
+  .card-title {
+    margin: 1rem 0rem;
   }
-  .card-title{
-    font-style: italic;  
-    color: #736535;
-    text-align: center;  
-    margin: 1.5rem;
-    font-size: 25px;
-    line-height: 38px;
-    letter-spacing: 2px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-  }
-  .center-card-txt{
-    display: flex;
-    justify-content: center;
-  }
-  .card-text{
-    margin-bottom: 1rem;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.0045em;
-    color: #3f3f3f;
-    font-family: 'Inter', sans-serif;
-    font-weight: 550;
-  }
-  .card-text li{
-    list-style: none;
-  }
+}
 
-  @media (min-width: 425px) {
-    .card-img-top {
-      width: 50%;
-    }
+/*Larger Projects*/
+@media (min-width: 1200px) {
+  .home-services {
+    padding: 6rem 15% 10rem 15%;
   }
-  /*Medium-ish Services Home*/
-  @media (min-width: 600px) {
-    .home-services {
-      padding: 10% 4rem;
-    }
-    .card {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-  }
-  /*Tablet Services Home*/
-  @media (min-width: 768px) {
-    .card{
-      margin: 2rem 5rem;
-    }
-    .card-text{
-      margin-bottom: 2rem;
-      margin-top: 1rem;
-    }
-  }
-  /*Large Services Home*/
-  @media (min-width: 992px) {
-    .home-services {
-      padding: 5rem;
-    }
-    .card {
-      height: 100%;
-      margin: 1rem;
-    }
-    .card-title{
-      margin: 1rem 0rem;
-    }
+}
 
-  }
-  
-  /*Larger Projects*/
-  @media (min-width: 1200px) {
-    .home-services {
-      padding: 6rem 15% 10rem 15%;
-    }
-  }
+#gold-icon {
+  margin: auto;
+  display:block;
+  margin-top:5.1rem;
+}
+
+#oilgas-icon{
+  margin:auto;
+  display:block;
+  margin-top:3.5rem;
+}
