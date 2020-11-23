@@ -82,6 +82,18 @@
         padding: 0rem;
         align-items: center;
     }
+    #rightSide p{
+        font-size: 18px;
+    }
+    #email{
+        font-size: 18px;
+    }
+    .learnMore{
+        margin-top: 1rem;
+    }
+    .btn{
+        font-size: 14px;
+    }
 }
 @media(min-width:1024px){
     .bkg{
@@ -89,6 +101,12 @@
     }
     #map{
         width: 350px;
+    }
+    #rightSide p{
+        font-size: 20px;
+    }
+    #email{
+        font-size: 20px;
     }
 }
 @media(min-width: 1440px){

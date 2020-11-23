@@ -73,7 +73,10 @@ hr {
 #oilText{
   display: none;
 }
-
+.fadeInText{
+  transition:0.75s;
+  opacity:1 !important;
+}
 @media (min-width: 425px) {
   .card-img-top {
     width: 50%;
@@ -96,8 +99,8 @@ hr {
     margin-top: 1rem;
   }
   .infoText{
-    opacity: 0;
     text-align: justify;
+    opacity: 0;
   }
 }
 /*Large Services Home*/
@@ -108,6 +111,14 @@ hr {
   }
   .card-title {
     margin: 1rem 0rem;
+  }
+}
+@media(min-width: 1024px){
+  #oilText{
+    display: block;
+  }
+  #mobileOilText{
+    display: none;
   }
 }
 
@@ -126,8 +137,5 @@ hr {
 #oilTextRow{
   margin-bottom:10rem;  
 }
-.fadeInText{
-  transition:0.75s;
-  opacity:1 !important;
-}
+
 }

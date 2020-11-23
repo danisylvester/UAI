@@ -14,12 +14,13 @@ export class HomeServicesComponent {
   @HostListener('window:scroll', ['$event']) onScroll(e) {
     this.fadeIn('oilText');
     this.fadeIn('preciousMetalText');
+    this.fadeIn('mobileOilText');
   }
 
   private fadeIn(id: string){
     const el = document.getElementById(id);
     const viewed = this.elementInViewport(el);
-    if(viewed){
+    if (viewed){
       if (!el.classList.contains('fadeInText')){
         el.classList.add('fadeInText');
       }
