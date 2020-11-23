@@ -28,18 +28,24 @@
 }
 #rightSide p{
     display: inline;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.0045em;
     color: #3f3f3f;
     font-family: 'Inter', sans-serif;
 }
-#rightSide a{
+#email{
     color: #3f3f3f;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.0045em;
-
+    font-family: 'Inter', sans-serif;
+}
+.btn{
+    color: #3f3f3f;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0045em;
     font-family: 'Inter', sans-serif;
 }
 .learnMore{
@@ -79,7 +85,7 @@
 }
 @media(min-width:1024px){
     .bkg{
-        padding: 4rem 3rem;
+        padding: 5rem 3rem;
     }
     #map{
         width: 350px;

@@ -16,6 +16,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     AboutUsComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

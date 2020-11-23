@@ -1,9 +1,27 @@
 .home-services {
-  padding: 4rem 1rem;
+  width:95%;
   letter-spacing: 2px;
+  padding-bottom: 2rem;
+}
+.locationText{
+  font-size:1.3rem;
+  font-weight:100;
+  font-family: "Goldman",cursive;
+  text-align:center;
+  color: #736535;
+  margin: 4rem 0rem;
+}
+.infoText{
+  font-weight:100;
+  font-family: "Goldman",cursive;
+  text-align:center;
+  color: #736535;
+  padding: 2.5rem 0rem; 
+  font-size:1.3rem;
 }
 .serve-margin {
   margin-bottom: 0.5rem;
+  margin-top: 4rem;
   color: #736535;
   font-size: 40px;
   font-family: "Goldman", cursive;
@@ -12,7 +30,7 @@
   margin: 1rem;
 }
 .card-col {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   transition: margin 0.35s ease;
 }
 $font-size: 2rem;
@@ -20,8 +38,8 @@ $font-size: 2rem;
   font-family: "Goldman", cursive;
   color: #736535;
   text-align: center;
-  margin: 1.5rem;
-  font-size: $font-size;
+  margin: 1rem;
+  font-size: $font-size *0.9;
   line-height: $font-size * 1.4;
   letter-spacing: 2px;
   font-weight: 600;
@@ -31,13 +49,11 @@ $font-size: 2rem;
 }
 hr {
   width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 1rem auto;
 }
-
 .card-text {
   margin-bottom: 1rem;
-  font-size: $font-size * 0.8;
+  font-size: $font-size * 0.7;
   line-height: $font-size;
   letter-spacing: 0.0045em;
   color: #3f3f3f;
@@ -47,6 +63,16 @@ hr {
 .card-text li {
   list-style: none;
 }
+.icon-wrap{
+  text-align: center;
+  padding: 1rem 0rem 0.5rem 0rem;
+}
+.emptyCol{
+  display: none;
+}
+#oilText{
+  display: none;
+}
 
 @media (min-width: 425px) {
   .card-img-top {
@@ -55,9 +81,6 @@ hr {
 }
 /*Medium-ish Services Home*/
 @media (min-width: 600px) {
-  .home-services {
-    padding: 10% 4rem;
-  }
   .card {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -72,12 +95,13 @@ hr {
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
+  .infoText{
+    opacity: 0;
+    text-align: justify;
+  }
 }
 /*Large Services Home*/
 @media (min-width: 992px) {
-  .home-services {
-    padding: 5rem;
-  }
   .card {
     height: 100%;
     margin: 1rem;
@@ -89,19 +113,21 @@ hr {
 
 /*Larger Projects*/
 @media (min-width: 1200px) {
-  .home-services {
-    padding: 6rem 15% 10rem 15%;
-  }
-}
-
 #gold-icon {
   margin: auto;
   display:block;
-  margin-top:5.1rem;
+  margin-top:2.1rem;
 }
-
 #oilgas-icon{
   margin:auto;
   display:block;
   margin-top:3.5rem;
+}
+#oilTextRow{
+  margin-bottom:10rem;  
+}
+.fadeInText{
+  transition:0.75s;
+  opacity:1 !important;
+}
 }
