@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
+import { LocationsLandingComponent } from './locations-landing/locations-landing.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     AboutUsComponent,
     HomeComponent,
     ContactComponent,
-    CarouselComponent
+    CarouselComponent,
+    LocationsLandingComponent
   ],
   imports: [
     BrowserModule,
