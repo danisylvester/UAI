@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LocationsLandingComponent } from './locations-landing/locations-landing.component';
+import { ColorNavbarComponent } from './color-navbar/color-navbar.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { LocationsLandingComponent } from './locations-landing/locations-landing
     HomeComponent,
     ContactComponent,
     CarouselComponent,
-    LocationsLandingComponent
+    LocationsLandingComponent,
+    ColorNavbarComponent
   ],
   imports: [
     BrowserModule,
