@@ -23,3 +23,13 @@
         height: 475px;
     }
 }
+@media(min-width: 1024px){
+    .imgSizing{
+        height: 550px;
+    }
+}
+@media(min-width: 1500px){
+    .imgSizing{
+        height: 700px;
+    }
+}

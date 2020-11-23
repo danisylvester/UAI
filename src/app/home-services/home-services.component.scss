@@ -73,6 +73,9 @@ hr {
 #oilText{
   display: none;
 }
+.infoText{
+  opacity: 0;
+}
 .fadeInText{
   transition:0.75s;
   opacity:1 !important;
@@ -100,7 +103,6 @@ hr {
   }
   .infoText{
     text-align: justify;
-    opacity: 0;
   }
 }
 /*Large Services Home*/
@@ -115,15 +117,41 @@ hr {
 }
 @media(min-width: 1024px){
   #oilText{
-    display: block;
+    display: flex;
   }
   #mobileOilText{
     display: none;
   }
+  .emptyCol{
+    display: block;
+  }
+  .infoText{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.75rem; 
+    font-size:1.35rem;
+  }
+  .locationText{
+    font-size: 1.5rem;
+  }
+  .card-text{
+    font-size: $font-size * 0.75;
+  }
+  .card-title{
+    font-size: $font-size;
+  }
+  .home-services{
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+  }
+  #secondHR{
+    margin-top: 5rem;
+  }
 }
 
 /*Larger Projects*/
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 #gold-icon {
   margin: auto;
   display:block;
@@ -134,8 +162,28 @@ hr {
   display:block;
   margin-top:3.5rem;
 }
-#oilTextRow{
-  margin-bottom:10rem;  
+.home-services{
+  padding: 1rem 2rem 7rem 2rem;
+}
+.infoText{
+  padding: 0rem 1rem; 
+  font-size:1.75rem;
+}
+.locationText{
+  font-size: 1.75rem;
+  padding-bottom: 1.5rem;
+}
+.card-text{
+  font-size: $font-size * 0.8;
+}
+.serve-margin{
+  margin-top: 4.5rem;
+}
+.icon-wrap{
+  padding: 0rem;
+}
+#metalsRow{
+  padding-bottom: 2rem;
 }
 
 }
