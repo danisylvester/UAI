@@ -36,6 +36,60 @@
   font-family: "Goldman", cursive;
     color: #dcbb67;
 }
+.locationSummary{
+  background-color: white;
+  font-size:1.3rem;
+  font-weight:100;
+  font-family: "Goldman",cursive;
+  text-align:center;
+  color: #736535;
+  margin: 4rem 1rem;
+}
+.locImg{
+  display: block;
+  margin-left: auto;
+    margin-right: auto;
+}
+.loc{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.overlayText {
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.overlayText h2{
+  font-size: 22px;
+}
+.overlayText a{
+  color: white;
+  font-size: 20px;
+}
+.overlay:hover{
+  opacity: 0.85;
+}
+.menuText{
+  text-transform: uppercase;
+}
 /*Tablet View*/
 @media (min-width: 768px) {
   .bkg {
@@ -60,11 +114,10 @@
   }
   #locationList li {
     padding: 0.5rem 0rem 1rem 0rem;
-
   }
   #locationList li a {
     color: #eee;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.0045em;
     font-family: 'Inter', sans-serif;
@@ -91,44 +144,74 @@
   #menuTitle{
     font-size: 30px;
   }
+  .locImg{
+    width: 385px;
+  }
+  .overlayText{
+    width: 90%;
+  }
 }
 /*Small Laptop View*/
 @media (min-width: 1024px) {
   .bkg {
-    padding: 4rem 1.5rem;
+    padding: 4rem 1.5rem 6rem 1.5rem;
   }
   #menuTitle{
     font-size: 35px;
+  }
+  .locationSummary{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .locImg{
+    width: 425px;
+    padding: 1rem;
+  }
+  .locationSummary{
+    font-size: 28px;
+  }
+  .overlayText h2{
+    font-size: 25px;
   }
 }
 /*Large Laptop View*/
 @media (min-width: 1440px) {
   #leftCol {
     width: 30%;
-    padding-left: 5rem;
+    padding-left: 4rem;
   }
-  #locationList {
-    font-size: x-large;
-  }
+  
   #mainCol {
     width: 70%;
   }
   .locImg {
-    width: 900px;
+    width: 550px;
   }
-  #menuTitle{
-    font-size: 40px;
-  }
+
 }
 @media(min-width:1850px){
   #leftCol {
     padding-left: 8rem;
   }
-  #locationList{
-    padding-top: 1.5rem;
-  }
   #locationList li{
     margin-bottom: 1.5rem;
+  }
+  #menuTitle{
+    font-size: 52px;
+    padding-bottom: 2rem;
+  }
+  #locationList li a {
+    font-size: 30px;
+  }
+  .locImg {
+    width: 800px;
+  }
+  .overlayText h2{
+    font-size: 30px;
+  }
+  .overlayText {
+    color: white;
+    font-size: 25px;
   }
 }
 

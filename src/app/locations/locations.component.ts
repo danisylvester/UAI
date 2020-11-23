@@ -79,6 +79,17 @@ export class LocationsComponent implements OnInit {
     } else {
       ele6.classList.remove('highlight');
     }
+
+    let ele7 = document.getElementById('loc7');
+    let x7 = this.elementInViewport(ele7);
+    ele7 = document.getElementById('menuItem7');
+    if (x7) {
+      if (!ele7.classList.contains('highlight')) {
+        ele7.classList.add('highlight');
+      }
+    } else {
+      ele7.classList.remove('highlight');
+    }
   }
 
   public highlight: boolean = false;
