@@ -60,8 +60,8 @@
   color: white;
 }
 .description h4{
-  font-weight: 400;
-
+  font-weight: 500;
+  padding-bottom: 0.5rem;
 }
 .location{
   margin: 3rem 0rem;
@@ -148,6 +148,9 @@
   .description{
     width: 425px;
   }
+  .description p{
+    font-size: 18px;
+  }
   .locationSummary{
     font-size: 28px;
   }
@@ -179,6 +182,12 @@
   }
   .description{
     width: 550px;
+  }
+  .description h4{
+    font-size: 27px;
+   }
+  .description p{
+    font-size: 19px;
   }
 
 }
