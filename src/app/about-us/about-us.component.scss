@@ -29,9 +29,7 @@
   text-align: center;
 }
 .profileImg {
-  width: 200px;
-  display: block;
-  margin: 2rem auto;
+  width: 275px;
 }
 .header {
   text-align: center;
@@ -40,6 +38,12 @@
   font-size: 40px;
   line-height: 28px;
   font-family: "Goldman", cursive;
+}
+.executiveHeadingWrap{
+  margin-top: 4rem;
+}
+.founderTitleWrapper{
+  padding-top:2rem;
 }
 .aFounderTitle {
   font-style: italic;
@@ -70,18 +74,14 @@ hr {
   font-size:29px;
   line-height:35px;
 }
-.founders-wrapper {
-  margin-top: 3rem;
-}
 .founder2 {
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 .icons-wrapper {
   margin: 1rem auto 3rem auto;
   color: #736535;
   text-align: center;
 }
-
 .icon {
   width: 70px;
 }
@@ -105,14 +105,6 @@ hr {
     text-align: left;
     padding: 3rem 4rem;
   }
-  .founderTitleWrapper {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 0;
-  }
-  .aFounderTitle {
-    text-align: center;
-  }
   .profileImg {
     margin: 2rem auto;
   }
@@ -135,6 +127,12 @@ hr {
   .topTitle h1{
     font-size: 50px;
   }
+  .aFounderTitle{
+    text-align: left;
+  }
+  .founderTitleWrapper{
+    padding-left: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -148,18 +146,8 @@ hr {
   .founders-wrapper {
     margin-top: 4rem;
   }
-
   .profileImg {
     width: 250px;
-  }
-  .profileImgWrapper,
-  .profileImg,
-  .founderTitleWrapper,
-  .aFounderTitle {
-    display: inline;
-  }
-  .founderTitleWrapper {
-    margin-left: 2rem;
   }
   .aFounderTitle {
     text-align: left;
@@ -181,6 +169,14 @@ hr {
     border-left: 3px solid #736535;
     margin-top: 5rem;
   }
+  .founderTitleWrapper{
+    padding-left: 2rem;
+  }
+}
+@media(min-width: 1200px){
+  .founderTitleWrapper{
+    padding-left: 3rem;
+  }
 }
 @media (min-width: 1440px) {
   .body {
@@ -188,6 +184,9 @@ hr {
   }
   .founders-wrapper {
     margin: 4rem 6rem;
+  }
+  .founderTitleWrapper{
+    padding-left: 1rem;
   }
 }
 @media (min-width: 1880px) {
