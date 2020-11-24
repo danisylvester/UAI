@@ -53,42 +53,15 @@
 .loc{
   position: relative;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
-.overlayText {
-  color: white;
-  font-size: 17px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-}
-.overlayText h2{
-  font-size: 22px;
-}
-.overlayText a{
-  color: white;
-  font-size: 20px;
-}
-.overlay:hover{
-  opacity: 0.85;
-}
 .menuText{
   text-transform: uppercase;
+}
+.description{
+  text-align: center;
+  color: white;
+}
+.location{
+  margin: 3rem 0rem;
 }
 /*Tablet View*/
 @media (min-width: 768px) {
@@ -148,9 +121,6 @@
   .locImg{
     width: 385px;
   }
-  .overlayText{
-    width: 90%;
-  }
 }
 /*Small Laptop View*/
 @media (min-width: 1024px) {
@@ -171,9 +141,6 @@
   .locationSummary{
     font-size: 28px;
   }
-  .overlayText h2{
-    font-size: 25px;
-  }
 }
 /*Large Laptop View*/
 @media (min-width: 1440px) {
@@ -192,27 +159,20 @@
 }
 @media(min-width:1850px){
   #leftCol {
-    padding-left: 8rem;
+    padding-left: 6rem;
   }
   #locationList li{
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
   }
   #menuTitle{
     font-size: 52px;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
   #locationList li a {
-    font-size: 30px;
+    font-size: 20px;
   }
   .locImg {
     width: 800px;
-  }
-  .overlayText h2{
-    font-size: 30px;
-  }
-  .overlayText {
-    color: white;
-    font-size: 25px;
   }
 }
 
