@@ -57,6 +57,9 @@
 .refColor{
     color:  #3f3f3f;
 }
+.brand img{
+    text-align: center;
+}
 @media(min-width: 425px){
     #map{
         width: 375px;
@@ -99,9 +102,15 @@
     #map{
         width: 415px;
     }
+    #rightInner{
+        transform: translate(0px, -50px);
+    }
 }
 @media(min-width: 1880px){
     #map{
         width: 500px;
+    }
+    #rightInner{
+        transform: translate(10px, -35px);
     }
 }

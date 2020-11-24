@@ -5,7 +5,7 @@
 }
 .topTitle {
   //   background-color: #736535;
-  background-image: url("/../assets/images/gold-oil-drum.jpg");
+  background-image: url("/../assets/images/gold-building-about.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +63,6 @@ hr {
   color: #5e5c5c;
   font-family: "Goldman", cursive;
   font-weight: 300;
-  text-align: justify;
 }
 .header-wrapper{
   font-size:29px;
@@ -127,6 +126,9 @@ hr {
   .header {
     display: block;
     margin: 3rem auto 4rem auto;
+  }
+  .text-wrapper{
+    text-align: justify;
   }
 }
 
