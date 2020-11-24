@@ -19,9 +19,8 @@
   font-size: 28px;
     line-height: 28px;
     letter-spacing: 0.0045em;
-    font-family: 'Inter', sans-serif;
+    font-family:"Goldman", cursive;
     font-weight: 550;
-    font-style: italic;
 }
 .locImg {
   width: 100%;
@@ -60,20 +59,24 @@
   text-align: center;
   color: white;
 }
+.description h4{
+  font-weight: 400;
+
+}
 .location{
   margin: 3rem 0rem;
 }
 /*Tablet View*/
 @media (min-width: 768px) {
   .bkg {
-    padding: 4rem 1.5rem;
+    padding: 4rem 1rem;
   }
   #leftCol {
     position: sticky;
     top: 15%;
     margin: 0rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
     width: 35%;
     float: left;
     padding-top: 2rem;
@@ -110,6 +113,7 @@
   .location {
     display: flex;
     justify-content: center;
+    transform: translate(25px);
   }
   .highlight{
     color: #dcbb67 !important;
@@ -119,6 +123,9 @@
     font-size: 30px;
   }
   .locImg{
+    width: 385px;
+  }
+  .description{
     width: 385px;
   }
 }
@@ -138,21 +145,39 @@
     width: 425px;
     padding: 1rem;
   }
+  .description{
+    width: 425px;
+  }
   .locationSummary{
     font-size: 28px;
   }
+  .location{
+    transform: translate(45px);
+  }
+  #leftCol {
+    padding-left:2rem;
+    padding-right: 0rem;
+  }
 }
 /*Large Laptop View*/
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   #leftCol {
     width: 30%;
     padding-left: 4rem;
   }
-  
+  .location{
+    transform: translate(0);
+  }
   #mainCol {
-    width: 70%;
+    width: 60%;
+  }
+  #leftCol{
+    width: 40%;
   }
   .locImg {
+    width: 550px;
+  }
+  .description{
     width: 550px;
   }
 
@@ -172,6 +197,9 @@
     font-size: 20px;
   }
   .locImg {
+    width: 800px;
+  }
+  .description{
     width: 800px;
   }
 }
