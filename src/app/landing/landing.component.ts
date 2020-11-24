@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any;
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -12,4 +13,13 @@ export class LandingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToServices(): void {
+    try {
+      document.querySelector('#home-services').scrollIntoView({
+        behavior: 'smooth'
+      })
+    } catch (err) {
+      console.log(err);
+    }
+  }
 }

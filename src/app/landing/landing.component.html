@@ -4,8 +4,7 @@
                 <img id="logoImg" src="/assets/images/logo-black-removebg-preview.png">
                 <a
                 id="scrollBtn" 
-                [routerLink]="'/home'"
-                [state]="{ subRoute: 'home-services' }"
+                (click)="scrollToServices()"
                 type="button btn"
                 ><i class="material-icons">expand_more</i></a>
             </div>
