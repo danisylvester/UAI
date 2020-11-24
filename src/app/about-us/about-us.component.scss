@@ -4,7 +4,7 @@
   background-color: white;
 }
 .topTitle {
-  //   background-color: #736535;
+  color: black;
   background-image: url("/../assets/images/gold-building-about.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -13,13 +13,14 @@
   height: 500px;
   margin: 0;
   justify-content: center;
-  color: white;
   display: flex;
   align-items: center;
   font-family: "Goldman", cursive;
   padding: 0rem 1rem;
   text-align: center;
-  font-weight: 900;
+}
+.topTitle h1{
+  font-weight: 800;
 }
 .body {
   padding: 3rem 1rem 4rem 1rem;
@@ -129,6 +130,9 @@ hr {
   }
   .text-wrapper{
     text-align: justify;
+  }
+  .topTitle h1{
+    font-size: 50px;
   }
 }
 
