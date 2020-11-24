@@ -70,9 +70,6 @@ hr {
 .emptyCol{
   display: none;
 }
-#oilText{
-  display: none;
-}
 .infoText{
   opacity: 0;
 }
@@ -108,7 +105,6 @@ hr {
 /*Large Services Home*/
 @media (min-width: 992px) {
   .card {
-    height: 100%;
     margin: 1rem;
   }
   .card-title {
@@ -116,12 +112,6 @@ hr {
   }
 }
 @media(min-width: 1024px){
-  #oilText{
-    display: flex;
-  }
-  #mobileOilText{
-    display: none;
-  }
   .emptyCol{
     display: block;
   }
