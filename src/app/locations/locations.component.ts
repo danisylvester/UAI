@@ -117,6 +117,23 @@ export class LocationsComponent implements OnInit {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
     );
   }
+
+  scrollToLocation(event):void {
+    var menuEl = event.target;
+    var menuIdAttr = menuEl.attributes.id;
+    var menuId = menuIdAttr.nodeValue;
+    var num = menuId.charAt(8);
+    var el = document.getElementById(`loc${num}`);
+    var elOffset = 60;
+    var elPosition = el.getBoundingClientRect().top;
+    var offsetPosition = elPosition - elOffset;
+
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth'
+ });
+
+  }
 }
 
 
