@@ -28,6 +28,7 @@ import { ColorNavbarComponent } from './color-navbar/color-navbar.component';
     NavbarComponent,
     HomeServicesComponent,
     LocationsComponent,
+    LocationsLandingComponent,
     HomeContactComponent,
     ScrollSpyDirective,
     FooterComponent,
