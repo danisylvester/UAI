@@ -16,7 +16,7 @@
   text-align: center;
   color: #dcbb67;
   margin: 1rem;
-  font-size: 28px;
+  font-size: 30px;
     line-height: 28px;
     letter-spacing: 0.0045em;
     font-family:"Goldman", cursive;
@@ -64,7 +64,7 @@
   padding-bottom: 0.5rem;
 }
 .location{
-  margin: 3rem 0rem;
+  margin: 4rem 0rem;
 }
 /*Tablet View*/
 @media (min-width: 768px) {
@@ -113,7 +113,7 @@
   .location {
     display: flex;
     justify-content: center;
-    transform: translate(25px);
+    transform: translate(27px);
   }
   .highlight{
     color: #dcbb67 !important;
@@ -123,10 +123,10 @@
     font-size: 30px;
   }
   .locImg{
-    width: 385px;
+    width: 400px;
   }
-  .description{
-    width: 385px;
+  .locHeader{
+    font-size: 32px;
   }
 }
 /*Small Laptop View*/
@@ -142,11 +142,8 @@
     padding-right: 1.5rem;
   }
   .locImg{
-    width: 425px;
+    width: 525px;
     padding: 1rem;
-  }
-  .description{
-    width: 425px;
   }
   .description p{
     font-size: 18px;
@@ -169,7 +166,7 @@
     padding-left: 4rem;
   }
   .location{
-    transform: translate(0);
+    transform: translate(25);
   }
   #mainCol {
     width: 60%;
@@ -178,10 +175,7 @@
     width: 40%;
   }
   .locImg {
-    width: 550px;
-  }
-  .description{
-    width: 550px;
+    width: 650px;
   }
   .description h4{
     font-size: 27px;
@@ -189,7 +183,12 @@
   .description p{
     font-size: 19px;
   }
-
+  #menuTitle{
+    font-size: 40px;
+  }
+  #locationList li a{
+    font-size: 20px;
+  }
 }
 @media(min-width:1850px){
   #leftCol {
@@ -208,8 +207,8 @@
   .locImg {
     width: 800px;
   }
-  .description{
-    width: 800px;
+  #locationList li a{
+    font-size: 22px;
   }
 }
 
