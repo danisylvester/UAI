@@ -10,6 +10,7 @@ import { MailgunService } from '../mailgun.service';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   public submitted = false;
+  public authorizedEmail: string = 'maria.sylvester10@gmail.com'
 
   constructor(private fb: FormBuilder, private mailgunService: MailgunService) { }
 
@@ -68,20 +69,24 @@ export class ContactComponent implements OnInit {
     }
   }
 
-  sendAnotherMsg(): void {   
+  sendAnotherMsg(): void {
     this.submitted = false;
   }
 
   onSubmit(): void {
+    const subject = 'Message from: ' + this.firstName.value + ' ' + this.lastName.value;
+    const msg = 'Message from: ' + this.firstName.value + ' ' + this.lastName.value + '\n' +
+    this.message.value + '\n' +
+    'Email; ' + this.email.value + '\n' +
+    'Phone Number: ' + this.phoneNumber.value;
     this.mailgunService.sendEmail(
-      'maria.sylvester10@gmail.com',
-      'whoever@wherever.com',
-      'Hello from angular!',
-      'I am the best').subscribe( res => {
+      this.authorizedEmail,
+      this.email.value,
+      subject,
+      msg).subscribe( res => {
         console.log(res);
       }, (error) => {
         console.log(error);
-      })
-    console.warn(this.contactForm);
+      });
   }
 }

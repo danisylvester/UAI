@@ -27,15 +27,15 @@ app.all("/*", function(req, res, next){
 
 app.post('/hello',function(request,response){
     var mailgun = require('mailgun-js')({apiKey: API_KEY, domain: DOMAIN});
+    console.log(request.body)
     const data = {
-        from: 'ncds42@gmail.com',
-        to: 'maria.sylvester10@gmail.com',
-        subject: 'Hello from server.js',
-        text: 'Testing some Mailgun awesomeness!'
+        from: request.body.from,
+        to: request.body.to,
+        subject: request.body.subject,
+        text: request.body.message
       };
       mailgun.messages().send(data, (error, body) => {
-        console.log(body);
-        response.send('Sent mail!');
+        response.send('Message was sent successfully!');
       })
 })
 
