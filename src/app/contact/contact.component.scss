@@ -1,6 +1,7 @@
 .bkg {
   width: 100%;
-  padding: 0;
+  padding: 0rem;
+  min-height: 100vh;
 }
 .heading {
   width: 100%;
@@ -18,99 +19,105 @@
   align-items: center;
   font-family: "Goldman", cursive;
 }
-.heading h1{
-    font-size: 55px;
+.heading h1 {
+  font-size: 50px;
+}
+.main {
+  padding: 3rem 0rem;
+}
+#textBox {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.myFormInput {
+  width: 95%;
+}
+#textBoxWrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.submittedPage {
+  text-align: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0)),
+    url("/../assets/images/black-370118_1280.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.submittedPage h3 {
+  margin-bottom: 3rem;
+}
+/* The Modal (background) */
+#myModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #888;
+  width: 80%;
+  height: 50%;
+}
+#modalHeader {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+#modalText {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
-.main{
-    padding: 4rem 1rem;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0.0045em;
-    color: #3f3f3f;
-    font-family: 'Inter', sans-serif;
+.submittedTextWrapper{
+  padding: 50% 1rem 0rem 1rem;
+  text-align: center;
 }
-.main h5{
-    font-size: 25px;
-    font-weight: 700;
+.submittedTextWrapper h3{
+  margin-bottom: 3rem;
 }
-#map{
-    height: auto;
-    width: 100%;
+.button{
+  background-color: #736535;
+  color: white;
+  text-transform: uppercase;
 }
-#map-wrapper{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+@media(min-width: 570px){
+  .submittedTextWrapper{
+    padding: 25% 1rem 0rem 1rem;
+  }
 }
-.gold{
-    color: #736535;
-    font-weight: bold;
+@media (min-width: 768px) {
+  .main {
+    padding: 5rem 0rem;
+  }
 }
-#rightSide{
-    padding-top: 2rem;
-    text-align: center;
-}
-#rightSide p{
-    display: inline;
-}
-.refColor{
-    color:  #3f3f3f;
-}
-.brand img{
-    text-align: center;
-}
-@media(min-width: 425px){
-    #map{
-        width: 375px;
-    }
-}
-@media(min-width: 768px){
-    #rightSide{
-        text-align:left;
-        margin-top:auto;
-        margin-bottom: auto;
-        padding-top:0;
-    }
-    #map{
-        width: 320px;
-    }
-    #map-wrapper{
-        padding: 0rem;
-        align-items: center;
-    }
-    .main{
-        padding:6rem 1rem;
-    }
-}
-@media(min-width:1024px){
-    #map{
-        width: 350px;
-    }
-    #rightSide{
-        padding-left: 3rem;
-    }
-    .main{
-        padding:7rem 2rem;
-    }
-}
-@media(min-width: 1440px){
-    #map-wrapper{
-        display: flex;
-        justify-content: center;
-    }
-    #map{
-        width: 415px;
-    }
-    #rightInner{
-        transform: translate(0px, -50px);
-    }
-}
-@media(min-width: 1880px){
-    #map{
-        width: 500px;
-    }
-    #rightInner{
-        transform: translate(10px, -35px);
-    }
+@media(min-width: 1024px){
+  .submittedTextWrapper{
+    padding: 15% 1rem 0rem 1rem;
+  }
 }

@@ -66,6 +66,10 @@
 .location{
   margin: 4rem 0rem;
 }
+.highlight{
+  color: #dcbb67 !important;
+  transition:0.5s;
+}
 /*Tablet View*/
 @media (min-width: 768px) {
   .bkg {
@@ -115,10 +119,7 @@
     justify-content: center;
     transform: translate(27px);
   }
-  .highlight{
-    color: #dcbb67 !important;
-    transition:0.5s;
-  }
+  
   #menuTitle{
     font-size: 30px;
   }

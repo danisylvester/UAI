@@ -17,7 +17,7 @@ export class LandingComponent implements OnInit {
     try {
       document.querySelector('#home-services').scrollIntoView({
         behavior: 'smooth'
-      })
+      });
     } catch (err) {
       console.log(err);
     }

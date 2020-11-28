@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HomeServicesComponent } from './home-services/home-services.component';
 import { LocationsComponent } from './locations/locations.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
@@ -19,6 +22,8 @@ import { RouterModule } from '@angular/router';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LocationsLandingComponent } from './locations-landing/locations-landing.component';
 import { ColorNavbarComponent } from './color-navbar/color-navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PhoneMaskDirective } from './phone-mask.directive';
 
 
 @NgModule({
@@ -37,14 +42,19 @@ import { ColorNavbarComponent } from './color-navbar/color-navbar.component';
     ContactComponent,
     CarouselComponent,
     LocationsLandingComponent,
-    ColorNavbarComponent
+    ColorNavbarComponent,
+    PhoneMaskDirective
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
