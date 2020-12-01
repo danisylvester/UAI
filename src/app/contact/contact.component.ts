@@ -10,7 +10,7 @@ import { MailgunService } from '../mailgun.service';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   public submitted = false;
-  public authorizedEmail: string = 'maria.sylvester10@gmail.com'
+  public authorizedEmail: string = 'info@uaimiddleeast.com';
 
   constructor(private fb: FormBuilder, private mailgunService: MailgunService) { }
 
@@ -50,8 +50,10 @@ export class ContactComponent implements OnInit {
   }
 
   popUpConfirmation(): void {
-    const contactModal = document.getElementById('myModal');
-    contactModal.style.display = 'block';
+    if (this.contactForm.valid){
+      const contactModal = document.getElementById('myModal');
+      contactModal.style.display = 'block';
+    }
   }
 
   closeModalBtn(): void {
