@@ -10,7 +10,6 @@ declare var $: any;
 
 export class HomeServicesComponent {
   // tslint:disable-next-line: typedef
-
   // @HostListener('window:scroll', ['$event']) onScroll(e) {
   //     this.fadeIn('oilText');
   //     this.fadeIn('preciousMetalText');
@@ -26,7 +25,7 @@ export class HomeServicesComponent {
   //   }
   // }
 
-  // tslint:disable-next-line: typedef
+  // // tslint:disable-next-line: typedef
   // private elementInViewport(el: any) {
 
   //   // Special bonus for those using jQuery
@@ -39,6 +38,11 @@ export class HomeServicesComponent {
   //   } catch (e) {
   //     return true;
   //   }
+  //   console.log("");
+  //   console.log("bottom " + rect.bottom + "<=" + " innerHeight " + window.innerHeight);
+  //   console.log("top " + rect.top + "<=" + " innerHeight " + window.innerHeight);
+  //   console.log("right " + rect.right + "<=" + " innerWidth " + window.innerWidth);
+  //   console.log("left " + rect.left);
 
   //   return (
   //     rect.top >= 0 &&
@@ -46,5 +50,17 @@ export class HomeServicesComponent {
   //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
   //     rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
   //   );
+  // }
+
+  // public isNotMobile: boolean = true;
+
+  // constructor() { }
+  // ngOnInit(): void {
+  //   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  //     console.log("you're on mobile");
+  //     this.isNotMobile = false;
+  //   }else{
+  //     console.log("you're not on mobile");
+  //   }
   // }
 }
