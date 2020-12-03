@@ -25,7 +25,6 @@ import { ColorNavbarComponent } from './color-navbar/color-navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PhoneMaskDirective } from './phone-mask.directive';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +43,7 @@ import { PhoneMaskDirective } from './phone-mask.directive';
     LocationsLandingComponent,
     ColorNavbarComponent,
     PhoneMaskDirective
-  ],
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
