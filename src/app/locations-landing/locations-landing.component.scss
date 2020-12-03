@@ -1,6 +1,6 @@
 .topTitle {
     //   background-color: #736535;
-    background-image: url("/../assets/images/locationsMapMobile.png");
+    background-image: url("/../assets/images/locationsMapMobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,13 +18,13 @@
   }
 @media(min-width:768px){
     .topTitle{
-        background-image: url("/../assets/images/locationsMapTablet.png");
+        background-image: url("/../assets/images/locationsMapTablet.jpg");
     }
 }
   @media(min-width:1024px){
       .topTitle{
           height: 500px;
-          background-image: url("/../assets/images/locationsMap.png");
+          background-image: url("/../assets/images/locationsMap.jpg");
 
       }
   }

@@ -43,11 +43,14 @@
   .carousel-inner {
     max-height: 150px !important;
   }
+  #c1 {
+    transform: translateY(-15px);
+  }
   #c2 {
     transform: translateY(-45px);
   }
   #c3 {
-    transform: translateY(-20px);
+    transform: translateY(-35px);
   }
   #c4 {
     transform: translateY(-18px);
@@ -88,7 +91,7 @@
     transform: translateY(-58px);
   }
   #c3 {
-    transform: translateY(0px);
+    transform: translateY(-35px);
   }
   #c4 {
     transform: translateY(-18px);
@@ -130,7 +133,7 @@
     transform: translateY(-85px);
   }
   #c3 {
-    transform: translateY(0px);
+    transform: translateY(-35px);
   }
   #c4 {
     transform: translateY(-25px);
@@ -233,6 +236,9 @@
   #c8 {
     transform: translateY(-125px);
   }
+  #c9 {
+    transform: translateY(-120px);
+  }
   #c10 {
     transform: translateY(-125px);
   }
@@ -274,7 +280,7 @@
     transform: translateY(-180px);
   }
   #c9 {
-    transform: translateY(-110px);
+    transform: translateY(-75px);
   }
   #c10 {
     transform: translateY(-150px);
@@ -289,6 +295,9 @@
   }
   #c2 {
     transform: translateY(-140px);
+  }
+  #c3 {
+    transform: translateY(-50px);
   }
   #c5 {
     transform: translateY(-140px);
@@ -317,13 +326,13 @@
     transform: translateY(0px);
   }
   #c1 {
-    transform: translateY(0px);
+    transform: translateY(-25px);
   }
   #c2 {
     transform: translateY(-215px);
   }
   #c3 {
-    transform: translateY(-25px);
+    transform: translateY(-35px);
   }
   #c5 {
     transform: translateY(-150px);

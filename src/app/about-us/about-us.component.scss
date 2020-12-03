@@ -5,7 +5,7 @@
 }
 .topTitle {
   color: black;
-  background-image: url("/../assets/images/JLT Gold Tower About us page.jpg");
+  background-image: url("/../assets/images/JLT-Gold-Tower-500.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,6 +133,9 @@ hr {
   .founderTitleWrapper{
     padding-left: 2.5rem;
   }
+  .topTitle {
+    background-image: url("/../assets/images/JLT-Gold-Tower-1000.jpg");
+  }
 }
 
 @media (min-width: 1024px) {
@@ -187,6 +190,9 @@ hr {
   }
   .founderTitleWrapper{
     padding-left: 1rem;
+  }
+  .topTitle {
+    background-image: url("/../assets/images/JLT-Gold-Tower-1500.jpg");
   }
 }
 @media (min-width: 1880px) {
