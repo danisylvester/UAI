@@ -112,7 +112,7 @@ export class LocationsComponent implements OnInit {
 
     return (
       rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)*1.5
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) * 1.5
     );
   }
 
