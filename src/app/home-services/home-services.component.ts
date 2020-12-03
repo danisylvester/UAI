@@ -14,14 +14,13 @@ export class HomeServicesComponent {
   @HostListener('window:scroll', ['$event']) onScroll(e) {
     this.fadeIn('oilText');
     this.fadeIn('preciousMetalText');
-    this.fadeIn('mobileOilText');
   }
 
-  private fadeIn(id: string){
+  private fadeIn(id: string) {
     const el = document.getElementById(id);
     const viewed = this.elementInViewport(el);
-    if (viewed){
-      if (!el.classList.contains('fadeInText')){
+    if (viewed) {
+      if (!el.classList.contains('fadeInText')) {
         el.classList.add('fadeInText');
       }
     }
@@ -34,8 +33,13 @@ export class HomeServicesComponent {
     if (typeof $ === 'function' && el instanceof $) {
       el = el[0];
     }
-
-    const rect = el.getBoundingClientRect();
+    
+    var rect;
+    try {
+      rect = el.getBoundingClientRect();
+    } catch (e) {
+      return true;
+    }
 
     return (
       rect.top >= 0 &&
