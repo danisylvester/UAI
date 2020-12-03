@@ -15,21 +15,6 @@ export class HomeComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    const stateData = history.state.subRoute;
-    function scrollToOffset(elID: string): void{
-      const el = document.getElementById(elID);
-      const elOffset = 60;
-      const elPosition = el.getBoundingClientRect().top;
-      const offsetPosition = elPosition - elOffset;
-
-      window.scrollBy({
-           top: offsetPosition,
-           behavior: 'smooth'
-      });
-    }
-
-    scrollToOffset(stateData);
-
   }
 
 }
