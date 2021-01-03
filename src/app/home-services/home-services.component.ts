@@ -13,7 +13,7 @@ export class HomeServicesComponent implements OnInit {
   public options = {
     root: null,
     threshold: 0.2,
-    rootMargin: '-50px'
+    rootMargin: '0px'
   };
 
   constructor() {}
@@ -25,7 +25,6 @@ export class HomeServicesComponent implements OnInit {
               entry.target.classList.remove('fadeInText');
             }
           } else {
-            console.log(entry.target);
             entry.target.classList.add('fadeInText');
           }
         })

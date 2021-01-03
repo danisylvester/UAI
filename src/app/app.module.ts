@@ -24,6 +24,7 @@ import { LocationsLandingComponent } from './locations-landing/locations-landing
 import { ColorNavbarComponent } from './color-navbar/color-navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PhoneMaskDirective } from './phone-mask.directive';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PhoneMaskDirective } from './phone-mask.directive';
     CarouselComponent,
     LocationsLandingComponent,
     ColorNavbarComponent,
-    PhoneMaskDirective
+    PhoneMaskDirective,
+    MaintenanceComponent
     ],
   imports: [
     BrowserModule,
